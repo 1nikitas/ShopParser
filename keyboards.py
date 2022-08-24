@@ -51,7 +51,9 @@ phone_keyboard = InlineKeyboardMarkup(row_width=2,
                                             ],
                                             [InlineKeyboardButton(text='Наушники SALE', callback_data='Сообщение'),
                                             InlineKeyboardButton(text="Телефоны SALE", callback_data="Где-то тут ссылка)")
-                                            ],
+
+                                             ],
+                                             [InlineKeyboardButton(text="НАЗАД", callback_data="Где-то тут ссылка)")]
 
 
                                        ]
@@ -73,7 +75,34 @@ computers = InlineKeyboardMarkup(row_width=2,
                                             InlineKeyboardButton(text="WEB-камеры", callback_data="Где-то тут ссылка)")
                                             ],
                                             [InlineKeyboardButton(text='Планшеты', callback_data='Сообщение'),
-                                            InlineKeyboardButton(text="Электронные книги", callback_data="Где-то тут ссылка)")
+                                            InlineKeyboardButton(text="Электронные книги", callback_data="Где-то тут ссылка)")],
+                                            [
+                                            InlineKeyboardButton(text="НАЗАД", callback_data="Где-то тут ссылка)"),
+
+                                            ],
+
+
+                                       ]
+                                    )
+
+
+tools = InlineKeyboardMarkup(row_width=2,
+                                       inline_keyboard=[
+                                           [InlineKeyboardButton(text='Измерительные инструменты', callback_data='Сообщение'),
+                                            InlineKeyboardButton(text="Спецодежда", callback_data="Где-то тут ссылка)")
+                                            ],
+                                           [InlineKeyboardButton(text='Электроинструменты', callback_data='Сообщение'),
+                                            InlineKeyboardButton(text="Ручной инструмень", callback_data="Где-то тут ссылка)")
+                                            ],
+                                            [InlineKeyboardButton(text='Сварочное оборудование', callback_data='Сообщение'),
+                                            InlineKeyboardButton(text="Бензоинструмент", callback_data="Где-то тут ссылка)")
+                                            ],
+                                            [
+                                            InlineKeyboardButton(text="Пневмоинструмент", callback_data="Где-то тут ссылка)"),
+                                            InlineKeyboardButton(text="Светотехника", callback_data="Где-то тут ссылка)")
+                                            ],
+                                            [InlineKeyboardButton(text='Техника для сада', callback_data='Сообщение'),
+                                            (InlineKeyboardButton(text="НАЗАД", callback_data="Где-то тут ссылка)"))
                                             ],
 
 

@@ -2,7 +2,7 @@ from aiogram import Bot, executor, types, Dispatcher
 from aiogram.dispatcher.filters import Command
 from dotenv import load_dotenv
 import os
-from keyboards import keyboard_menu, phone_keyboard, computers
+from keyboards import keyboard_menu, phone_keyboard, computers, tools
 
 load_dotenv()
 
@@ -22,6 +22,55 @@ async def phones(message: types.Message):
 @dp.message_handler(text="Компьютерная техника")
 async def phones(message: types.Message):
     await message.answer("Выберите подкатегорию для поиска", reply_markup=computers)
+
+
+@dp.message_handler(text="Инструменты")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Игры и приставки")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Товары для дома")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+@dp.message_handler(text="Авто")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Фото и видеотехника")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Хобби и отдых")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Личные вещи")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="Аудиотехника")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+@dp.message_handler(text="Товары для дома")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
+
+@dp.message_handler(text="ТВ и Видео")
+async def phones(message: types.Message):
+    await message.answer("Выберите подкатегорию для поиска", reply_markup=tools)
+
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
