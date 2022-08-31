@@ -36,8 +36,8 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 phone_keyboard = InlineKeyboardMarkup(row_width=2,
                                        inline_keyboard=[
-                                           [InlineKeyboardButton(text='Телефоны', callback_data='Сообщение'),
-                                            InlineKeyboardButton(text="Умные Часы", callback_data="Где-то тут ссылка)")
+                                           [InlineKeyboardButton(text='Телефоны', callback_data='1'),
+                                            InlineKeyboardButton(text="Умные Часы", callback_data="2")
                                             ],
                                            [InlineKeyboardButton(text='Науники', callback_data='Сообщение'),
                                             InlineKeyboardButton(text="Телефоны для офиса", callback_data="Где-то тут ссылка)")
