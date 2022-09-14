@@ -8,13 +8,13 @@ from dotenv import load_dotenv
 import os
 from keyboards import keyboard_menu, phone_keyboard, computers, tools, for_home, audio, auto, TV, baby, hobby, clothers, photo, gamess
 from db import Database
+
+
 load_dotenv()
 
 
 bot = Bot(token=os.getenv("TOKEN"))
 dp = Dispatcher(bot)
-
-
 
 @dp.message_handler(Command('start'))
 async def start(message: types.Message):
